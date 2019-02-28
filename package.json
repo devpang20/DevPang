@@ -69,6 +69,7 @@
     "url": "git+https://github.com/JaeYeopHan/gatsby-starter-bee.git"
   },
   "scripts": {
+    "deploy": "gatsby build && gh-pages -d public -b master -r 'git@github.com:${devpang20}/${DevPang}.github.io.git'",
     "post": "node ./cli/create-new-post.js",
     "dev": "gatsby develop",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
